@@ -19,7 +19,7 @@ Abaixo, o diagrama ilustrando a interação do ator principal com o sistema de D
 ```mermaid
 flowchart LR
     %% Atores
-    User([Usuário / Pesquisador])
+    User([Usuário])
 
     %% Casos de Uso
     subgraph Dashboard [Sistema de Dashboard ODS 3]
