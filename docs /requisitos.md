@@ -14,7 +14,7 @@
 * **RNF03 (Desempenho):** A renderização dos gráficos não deve ultrapassar 3 segundos após a aplicação de um filtro pelo usuário.
 
 ## 3. Diagrama de Casos de Uso
-Abaixo, o diagrama ilustrando a interação do ator principal com o sistema de Dashboard.
+O diagrama abaixo demonstra a interação do usuário com a aplicação:
 
 ```mermaid
 flowchart LR
