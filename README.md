@@ -1,4 +1,4 @@
-# Mapa_saude-ODS3
+# Mapa da Saúde - Uma perspectiva urbana
 
 ## Sobre o Projeto
 Este projeto consiste em uma aplicação de software desenvolvida para a disciplina de Engenharia de Software, do curso de Ciência de Dados e Inteligência Artificial, da PUC Minas.
