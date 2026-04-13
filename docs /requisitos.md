@@ -9,9 +9,9 @@
 
 ## 2. Requisitos Não Funcionais (RNF)
 
-* **RNF01 (Tecnologia):** O backend de processamento de dados e a interface devem ser construídos utilizando a linguagem Python (ex: bibliotecas Pandas e Streamlit/Dash).
-* **RNF02 (Usabilidade):** A interface do dashboard deve ser responsiva, adaptando-se a diferentes tamanhos de tela.
-* **RNF03 (Desempenho):** A renderização dos gráficos não deve ultrapassar 3 segundos após a aplicação de um filtro pelo usuário.
+* **RNF01 (Tecnologia):** O backend de processamento de dados e a interface devem ser construídos em Python (Pandas e Streamlit/Dash).
+* **RNF02 (Usabilidade):** A interface do dashboard deve ser responsiva, adaptando-se a qualquer tipo de tela.
+* **RNF03 (Desempenho):** A renderização dos gráficos não deve travar em filtros dependendo do volume de processamento.
 
 ## 3. Diagrama de Casos de Uso
 O diagrama abaixo demonstra a interação do usuário com a aplicação:
