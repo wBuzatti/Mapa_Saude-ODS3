@@ -19,4 +19,4 @@ O objetivo é criar um Dashboard Interativo, focado no processamento e visualiza
 O gerenciamento ágil do projeto, incluindo o Product Backlog e os Sprints, está sendo realizado na aba **Projects** deste repositório.
 
 
-`* docs/arquitetura.md`
+`*docs/arquitetura.md*`
