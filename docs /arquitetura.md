@@ -27,3 +27,25 @@ flowchart TD
 
     User -- "Visualiza KPIs, filtra dados e exporta análises" --> System
     System -- "Extrai dados brutos de saúde e demografia" --> ExtData
+```
+
+### Nível 2: Diagrama de Container
+
+flowchart TD
+    User(["Usuário\n(Cidadão / Pesquisador)"])
+    
+    subgraph System["Sistema de Dashboard ODS 3"]
+        UI["Aplicação Web (Frontend)\n[Streamlit / HTML / CSS]\nInterface interativa de visualização"]
+        Backend["Lógica de Processamento (Backend)\n[Python / Pandas]\nFiltra, agrega e processa os dados sob demanda"]
+        Storage["Armazenamento de Dados\n[Arquivos CSV/Parquet]\nBases de dados higienizadas prontas para leitura"]
+    end
+
+    User -- "Acessa pelo navegador, interage com gráficos" --> UI
+    UI -- "Solicita dados filtrados" --> Backend
+    Backend -- "Retorna dados processados/gráficos" --> UI
+    Backend -- "Lê dados estruturados" --> Storage
+
+## 3. Justificativa do Modelo Escolhido (iii)
+O modelo arquitetural escolhido segue uma abordagem cliente-servidor leve, acoplada por meio do framework Streamlit.
+
+A escolha dessa arquitetura justifica-se pelo escopo da aplicação e pela natureza do problema (análise de dados). Separar a extração bruta (sistemas externos) de um armazenamento local em arquivos formatados (.csv/.parquet) simula um ambiente de Data Lake simplificado. O uso do Python no backend gerenciando a interface via Streamlit elimina a necessidade de criar APIs complexas (REST/GraphQL) e hospedar servidores web separados, o que reduz a complexidade da gerência de configuração, sem perder a robustez no processamento analítico dos dados.
