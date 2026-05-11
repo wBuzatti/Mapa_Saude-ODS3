@@ -17,3 +17,6 @@ O objetivo é criar um Dashboard Interativo, focado no processamento e visualiza
 
 ##  Planejamento
 O gerenciamento ágil do projeto, incluindo o Product Backlog e os Sprints, está sendo realizado na aba **Projects** deste repositório.
+
+
+`* [Documentação da Arquitetura (C4 Model)](docs/arquitetura.md)`
